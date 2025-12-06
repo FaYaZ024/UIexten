@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme{
+    --color-dark:linear-gradient(180deg,rgba(96, 96, 219, 1) 0%, rgba(162, 126, 230, 1) 100%);
+    --color-light: linear-gradient(180deg,rgba(207, 207, 207, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    --color-card:  linear-gradient(90deg,rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+body{
+    background:var(--color-light);
+     background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+  transition:background 0.15s ease;
+}
+
+.dark body{
+    background :oklch(55.4% 0.046 257.417);
+    transition:background 0.15s ease;
+}
+.dark .card{
+    background-color:oklch(37.3% 0.034 259.733);
+    border:2px solid oklch(70.7% 0.022 261.325) ;
+    color: white;
+    transition:background 0.15s ease;
+}
+
+.dark .head{
+    background-color:oklch(37.3% 0.034 259.733) ;
+    transition:background 0.15s ease;
+}
+
+.dark .mode{
+    background-color: oklch(20.8% 0.042 265.755);
+}
+
+.toggle {
+  background-color: whitesmoke;
+  border: 1px solid #aaa;
+  border-radius: 99px;
+  width: 50px;
+  height: 25px;
+  transition: background-color 0.1s ease, border-color 0.1s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle .thumb {
+    padding: 2;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(182, 182, 182);
+  border-radius: 99px;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.15s ease;
+}
+
+/* Toggle ON */
+.toggle.toggled {
+  background-color: #15b58e;
+}
+
+/* Move thumb when toggled */
+.toggle.toggled .thumb {
+  left: 25px; /* final position */
+}
+
+.toggle:hover {
+  border-color: #6f6f6f;
+}

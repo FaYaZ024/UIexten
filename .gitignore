@@ -1,0 +1,93 @@
+# -----------------------------------
+# Logs
+# -----------------------------------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[!0-9]*
+*.pid
+*.seed
+
+# -----------------------------------
+# Node / build outputs
+# -----------------------------------
+node_modules/
+dist/
+dist-ssr/
+build/
+*.local
+
+# Vite cache
+.vite/
+
+# Bun cache
+.bun/
+
+# Tailwind CSS JIT cache
+.tailwind/
+
+# -----------------------------------
+# Environment variables
+# -----------------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------------
+# OS-generated files
+# -----------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.Spotlight-V100
+.Trashes
+
+# -----------------------------------
+# Editor / IDE files
+# -----------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# JetBrains (WebStorm / IntelliJ)
+*.iml
+*.ipr
+*.iws
+
+# VSCode workspace
+*.code-workspace
+
+# -----------------------------------
+# TypeScript
+# -----------------------------------
+*.tsbuildinfo
+
+# -----------------------------------
+# Optional: lockfiles if not used
+# (Uncomment if you don't use these)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# -----------------------------------
+# Optional: macOS clutter
+# -----------------------------------
+.AppleDouble
+.LSOverride
+
+# -----------------------------------
+# Optional: Linux temp files
+# -----------------------------------
+*~
