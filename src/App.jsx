@@ -111,6 +111,7 @@ function App() {
                   className={`toggle ${item.toggled ? 'toggled' : ''}`}
                   onClick={() => toggledId(item.id)}
                   aria-pressed={item.toggled}
+                  aria-label={item.toggled ? "Turn off extension" : "Turn on extension"}
                 >
                   <div className="thumb"></div>
                 </button>
